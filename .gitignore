@@ -9,3 +9,4 @@ TODO.md
 *.swp
 
 /build
+/.grunt

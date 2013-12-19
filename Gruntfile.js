@@ -102,7 +102,7 @@ module.exports = function(grunt) {
       },
       grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['clean', 'readme', 'assemble', 'less:develop'],
+        tasks: ['clean', 'assemble', 'less:develop'],
       },
       less: {
         files: _.map(grunt.config.get('less.options.paths'),
@@ -113,10 +113,6 @@ module.exports = function(grunt) {
       assemble: {
         files: ['README.md', 'templates/**/*.hbs', 'templates/helpers/*.js'],
         tasks: ['assemble'],
-      },
-      readme: {
-        files: ['docs/README.tmpl.md'],
-        tasks: ['readme'],
       },
     },
 
@@ -131,6 +127,7 @@ module.exports = function(grunt) {
             cwd: 'build',
             src: '**/*',
             dest: 'build',
+            filter: 'isFile',
           },
         ],
       },
@@ -164,9 +161,9 @@ module.exports = function(grunt) {
   });
 
   // register grunt tasks
-  grunt.registerTask('develop', ['clean', 'jshint', 'readme', 'assemble', 'less:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'readme', 'assemble', 'less:deploy',/* 'compress',*/ 'hashres', 'gh-pages']);
+  grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'connect:develop', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'compress', 'hashres', 'gh-pages']);
 
   // default task to be run.
-  grunt.registerTask('default', ['clean', 'readme', 'assemble', 'less:deploy', 'connect:default']);
+  grunt.registerTask('default', ['clean', 'assemble', 'less:deploy', 'connect:default']);
 };

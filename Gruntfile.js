@@ -120,6 +120,19 @@ module.exports = function(grunt) {
       },
     },
 
+    compress: {
+      deploy: {
+        options: {
+          mode: 'gzip',
+        },
+        files: [{
+          expand: true,
+          cwd: 'build/',
+          src: ['index.css'],
+          dest: 'build/,
+        }],
+      },
+
     hashres: {
       deploy: {
         src: [

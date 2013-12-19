@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     hashres: {
       deploy: {
         src: [
-          'build/index.css'
+          'build/*.css*'
         ],
         dest: 'build/**/*.html',
       },

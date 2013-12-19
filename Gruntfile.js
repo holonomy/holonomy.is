@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       deploy: {
         options: {
           cleancss: true,
-          report: 'gzip',
+          report: 'min',
           sourceMap: true,
         },
         files: {

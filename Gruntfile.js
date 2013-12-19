@@ -50,16 +50,17 @@ module.exports = function(grunt) {
         banner: banner,
         paths: lessPaths,
       },
-      all: {
+      develop: {
+        compress: false,
         files: {
           'build/index.css': 'styles/index.less',
         },
       },
-      develop: {
-        compress: false,
-      },
       deploy: {
         compress: true,
+        files: {
+          'build/index.css': 'styles/index.less',
+        },
       },
     },
 
@@ -106,7 +107,7 @@ module.exports = function(grunt) {
         tasks: ['less'],
       },
       assemble: {
-        files: ['templates/**/*.hbs', 'templates/helpers/*.js'],
+        files: ['README.md', 'templates/**/*.hbs', 'templates/helpers/*.js'],
         tasks: ['assemble'],
       },
       readme: {
@@ -118,9 +119,9 @@ module.exports = function(grunt) {
     hashres: {
       deploy: {
         src: [
-          'build/index.css',
+          'build/index.css'
         ],
-        dest: 'build/index.html',
+        dest: 'build/**/*.html',
       },
     },
 

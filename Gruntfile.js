@@ -132,6 +132,7 @@ module.exports = function(grunt) {
           dest: 'build/,
         }],
       },
+    },
 
     hashres: {
       deploy: {

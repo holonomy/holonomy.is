@@ -70,11 +70,18 @@ module.exports = function(grunt) {
     },
 
     connect: {
-      server: {
+      options: {
+        port: 5000,
+        base: 'build',
+      },
+      develop: {
         options: {
-          port: 5000,
-          base: 'build',
           livereload: true,
+        },
+      },
+      default: {
+        options: {
+          keepalive: true,
         },
       },
     },
@@ -101,6 +108,10 @@ module.exports = function(grunt) {
       assemble: {
         files: ['templates/**/*.hbs', 'templates/helpers/*.js'],
         tasks: ['assemble'],
+      },
+      readme: {
+        files: ['docs/README.tmpl.md'],
+        tasks: ['readme'],
       },
     },
 
@@ -138,11 +149,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
 
   // register grunt tasks
-  grunt.registerTask('build', ['clean', 'jshint', 'assemble', 'less', 'readme']);
-  grunt.registerTask('server', ['connect']);
-  grunt.registerTask('develop', ['build', 'server', 'watch']);
-  grunt.registerTask('deploy', ['build', 'hashres', 'gh-pages']);
+  grunt.registerTask('develop', ['clean', 'jshint', 'readme', 'assemble', 'less:develop', 'connect:develop', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'readme', 'assemble', 'less:deploy', 'hashres', 'gh-pages']);
 
   // default task to be run.
-  grunt.registerTask('default', ['build', 'server']);
+  grunt.registerTask('default', ['clean', 'readme', 'assemble', 'less:deploy', 'connect:default']);
 };

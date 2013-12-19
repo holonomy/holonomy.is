@@ -121,16 +121,16 @@ module.exports = function(grunt) {
     },
 
     compress: {
+      options: {
+        mode: 'gzip',
+      },
       deploy: {
-        options: {
-          mode: 'gzip',
-        },
         files: [
           {
             expand: true,
-            cwd: 'build/',
-            src: ['index.css'],
-            dest: 'build/',
+            cwd: 'build',
+            src: '**/*',
+            dest: 'build',
           },
         ],
       },
@@ -165,7 +165,7 @@ module.exports = function(grunt) {
 
   // register grunt tasks
   grunt.registerTask('develop', ['clean', 'jshint', 'readme', 'assemble', 'less:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'readme', 'assemble', 'less:deploy', 'compress', 'hashres']);//, 'gh-pages']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'readme', 'assemble', 'less:deploy',/* 'compress',*/ 'hashres', 'gh-pages']);
 
   // default task to be run.
   grunt.registerTask('default', ['clean', 'readme', 'assemble', 'less:deploy', 'connect:default']);

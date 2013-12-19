@@ -8,10 +8,6 @@
 
 var _ = require('lodash');
 
-var lessPaths = [
-  'node_modules/bootstrap/less',
-  'styles',
-];
 var banner = '/* <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 
 module.exports = function(grunt) {
@@ -48,16 +44,22 @@ module.exports = function(grunt) {
     less: {
       options: {
         banner: banner,
-        paths: lessPaths,
+        paths: [
+          'node_modules/bootstrap/less',
+          'styles',
+        ],
       },
       develop: {
-        compress: false,
         files: {
           'build/index.css': 'styles/index.less',
         },
       },
       deploy: {
-        compress: true,
+        options: {
+          cleancss: true,
+          report: 'gzip',
+          sourceMap: true,
+        },
         files: {
           'build/index.css': 'styles/index.less',
         },
@@ -103,7 +105,9 @@ module.exports = function(grunt) {
         tasks: ['build'],
       },
       less: {
-        files: _.map(lessPaths, function (p) { return p + '/*.less'; }),
+        files: _.map(grunt.config.get('less.options.paths'),
+          function (p) { return p + '/*.less'; }
+        ),
         tasks: ['less'],
       },
       assemble: {
@@ -139,15 +143,9 @@ module.exports = function(grunt) {
   });
 
   // load npm plugins to provide necessary tasks.
-  grunt.loadNpmTasks('grunt-gh-pages');
-  grunt.loadNpmTasks('grunt-hashres');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-readme');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('assemble');
+  require('load-grunt-tasks')(grunt, {
+    pattern: ['grunt-*', 'assemble*'],
+  });
 
   // register grunt tasks
   grunt.registerTask('develop', ['clean', 'jshint', 'readme', 'assemble', 'less:develop', 'connect:develop', 'watch']);

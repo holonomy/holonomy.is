@@ -125,12 +125,14 @@ module.exports = function(grunt) {
         options: {
           mode: 'gzip',
         },
-        files: [{
-          expand: true,
-          cwd: 'build/',
-          src: ['index.css'],
-          dest: 'build/,
-        }],
+        files: [
+          {
+            expand: true,
+            cwd: 'build/',
+            src: ['index.css'],
+            dest: 'build/',
+          },
+        ],
       },
     },
 

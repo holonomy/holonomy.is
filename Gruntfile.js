@@ -1,6 +1,6 @@
 /*
  * holonomy-website
- * https://github.com/ahdinosaur/holonomy-website
+ * https://github.com/holonomy/website
  * licensed under the AGPLv3 license.
  */
 
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
     // before generating any new files,
     // remove any previously-created files.
     clean: {
-      build: ['build/*.html']
+      build: ['build/**/*']
     },
 
     connect: {
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
       },
       grunt: {
         files: ['Gruntfile.js'],
-        tasks: ['build'],
+        tasks: ['clean', 'readme', 'assemble', 'less:develop'],
       },
       less: {
         files: _.map(grunt.config.get('less.options.paths'),

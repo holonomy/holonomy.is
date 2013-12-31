@@ -1,0 +1,23 @@
+---
+component: navbar
+---
+<div class="jumbotron">
+  <h1>we are all holons</h1>
+  <p>holonomy is a project to advance the technology of self-organizing holons</p>
+</div>
+<nav role="navigation">
+  <ul class="nav nav-tabs">
+    <li{{#is basename "index"}} class="active"{{/is}}>
+      <a href="{{relative page "index.html"}}">index</a>
+    </li>
+    <li{{#is basename "holons"}} class="active"{{/is}}>
+      <a href="{{relative page "holons.html"}}">holons</a>
+    </li>
+    <li{{#is basename "tech"}} class="active"{{/is}}>
+      <a href="{{relative page "tech.html"}}">technology</a>
+    </li>
+    <li{{#is basename "org"}} class="active"{{/is}}>
+      <a href="{{relative page "org.html"}}">organization</a>
+    </li>
+  </ul>
+</nav>

@@ -9,6 +9,10 @@
 var _ = require('lodash');
 
 var banner = '/* <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
+var lessPaths = [
+  'node_modules/bootstrap/less',
+  'styles',
+];
 
 module.exports = function(grunt) {
 
@@ -44,10 +48,7 @@ module.exports = function(grunt) {
     less: {
       options: {
         banner: banner,
-        paths: [
-          'node_modules/bootstrap/less',
-          'styles',
-        ],
+        paths: lessPaths,
       },
       develop: {
         files: {
@@ -105,7 +106,7 @@ module.exports = function(grunt) {
         tasks: ['clean', 'assemble', 'less:develop'],
       },
       less: {
-        files: _.map(grunt.config.get('less.options.paths'),
+        files: _.map(lessPaths,
           function (p) { return p + '/*.less'; }
         ),
         tasks: ['less'],
@@ -128,6 +129,7 @@ module.exports = function(grunt) {
             src: '**/*',
             dest: 'build',
             filter: 'isFile',
+            ext: '',
           },
         ],
       },
@@ -162,7 +164,7 @@ module.exports = function(grunt) {
 
   // register grunt tasks
   grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'compress', 'hashres', 'gh-pages']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'compress', 'hashres'/*, 'gh-pages'*/]);
 
   // default task to be run.
   grunt.registerTask('default', ['clean', 'assemble', 'less:deploy', 'connect:default']);

@@ -164,7 +164,7 @@ module.exports = function(grunt) {
 
   // register grunt tasks
   grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'compress', 'hashres'/*, 'gh-pages'*/]);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'compress', 'hashres', 'gh-pages']);
 
   // default task to be run.
   grunt.registerTask('default', ['clean', 'assemble', 'less:deploy', 'connect:default']);

@@ -10,7 +10,7 @@ var _ = require('lodash');
 
 var banner = '/* <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 var lessPaths = [
-  'node_modules/bootstrap/less',
+  'node_modules/semantic/src',
   'styles',
 ];
 
@@ -64,6 +64,23 @@ module.exports = function(grunt) {
         files: {
           'build/index.css': 'styles/index.less',
         },
+      },
+    },
+
+    // compile JS
+    browserify: {
+      develop: {
+        files: {
+          'build/index.js': 'scripts/index.js',
+        },
+      },
+      deploy: {
+        files: {
+          'build/index.js': 'scripts/index.js',
+        },
+        options: {
+          transform: ['uglifyify'],
+        }
       },
     },
 
@@ -162,8 +179,8 @@ module.exports = function(grunt) {
   });
 
   // register grunt tasks
-  grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', /*'compress', */'hashres', 'gh-pages']);
+  grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'browserify:develop', 'connect:develop', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'browserify:deploy', /*'compress', */'hashres', 'gh-pages']);
 
   // default task to be run.
   grunt.registerTask('default', ['clean', 'assemble', 'less:deploy', 'connect:default']);

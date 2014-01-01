@@ -1,22 +1,21 @@
 ---
 component: navbar
 ---
-<div class="jumbotron">
-  <h1>we are all holons</h1>
-  <p>holonomy is a project to advance the technology of self-organizing holons</p>
-</div>
+<h1>we are all holons</h1>
+<h2>holonomy is a project to advance the technology of self-organizing holons</h2>
+
 <nav role="navigation">
-  <ul class="nav nav-tabs">
-    <li{{#is basename "index"}} class="active"{{/is}}>
-      <a href="{{relative page "index.html"}}">index</a>
+  <ul class="ui tabular menu">
+    <li class="{{#is basename "index"}}active {{/is}}item">
+      <a href="{{relative page "index.html"}}">intro</a>
     </li>
-    <li{{#is basename "learn"}} class="active"{{/is}}>
+    <li class="{{#is basename "learn"}}active {{/is}}item">
       <a href="{{relative page "learn.html"}}">learn</a>
     </li>
-    <li{{#is basename "create"}} class="active"{{/is}}>
+    <li class="{{#is basename "create"}}active {{/is}}item">
       <a href="{{relative page "create.html"}}">create</a>
     </li>
-    <li{{#is basename "organize"}} class="active"{{/is}}>
+    <li class="{{#is basename "organize"}}active {{/is}}item">
       <a href="{{relative page "organize.html"}}">organize</a>
     </li>
   </ul>

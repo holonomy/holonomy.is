@@ -1,24 +1,26 @@
 ---
 component: navbar
 ---
-<img src="http://i.imgur.com/B8eNodx.gif" alt="holonic gear animation" />
+<header class="ui header">
+  <img src="http://i.imgur.com/B8eNodx.gif" alt="holonic gear animation" />
 
-<h1>we are all holons</h1>
-<h2>holonomy is a project to advance the technology of self-organizing holons</h2>
+  <h1>we are all holons</h1>
+  <h2>holonomy is a project to advance the technology of self-organizing holons</h2>
 
-<nav role="navigation">
-  <ul class="ui tabular menu">
-    <li class="{{#is basename "index"}}active {{/is}}item">
-      <a href="{{relative page "index.html"}}">intro</a>
-    </li>
-    <li class="{{#is basename "learn"}}active {{/is}}item">
-      <a href="{{relative page "learn.html"}}">learn</a>
-    </li>
-    <li class="{{#is basename "create"}}active {{/is}}item">
-      <a href="{{relative page "create.html"}}">create</a>
-    </li>
-    <li class="{{#is basename "organize"}}active {{/is}}item">
-      <a href="{{relative page "organize.html"}}">organize</a>
-    </li>
-  </ul>
-</nav>
+  <nav role="navigation">
+    <ul class="ui tabular menu">
+      <li class="{{#is basename "index"}}active {{/is}}item">
+        <a href="{{relative page "index.html"}}">intro</a>
+      </li>
+      <li class="{{#is basename "learn"}}active {{/is}}item">
+        <a href="{{relative page "learn.html"}}">learn</a>
+      </li>
+      <li class="{{#is basename "create"}}active {{/is}}item">
+        <a href="{{relative page "create.html"}}">create</a>
+      </li>
+      <li class="{{#is basename "organize"}}active {{/is}}item">
+        <a href="{{relative page "organize.html"}}">organize</a>
+      </li>
+    </ul>
+  </nav>
+</header>

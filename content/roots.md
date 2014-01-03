@@ -9,3 +9,5 @@ holonomy is organized by you: anyone can contribute to holonomy development, all
 TODO: [on reddit](http://reddit.com/r/holonomy)
 
 ### funding / sponsorship
+
+[on BountySource](https://www.bountysource.com/teams/holonomy)

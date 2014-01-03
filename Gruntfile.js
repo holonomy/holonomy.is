@@ -129,7 +129,7 @@ module.exports = function(grunt) {
         tasks: ['less'],
       },
       assemble: {
-        files: ['README.md', 'templates/**/*.hbs', 'templates/helpers/*.js'],
+        files: ['README.md', 'templates/**/*.hbs', 'templates/helpers/*.js', 'content/**'],
         tasks: ['assemble'],
       },
     },

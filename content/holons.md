@@ -18,9 +18,9 @@ this provides an interesting way to desconstruct the function of holonic softwar
 
 > Every holon has the dual tendency to preserve and assert its individuality as a quasi-autonomous whole; and to function as an integrated part of an (existing or evolving) larger whole. This polarity between the Self-Assertive (S-A) and Integrative (INT) tendencies is inherent in the concept of hierarchic order; and a universal characteristic of life. the S-A tendencies are the dynamic expression of the holon's wholeness, the INT tendencies of its partness.
 
-individual holons possess a dominant monad. everything moves as one step.
+individual holons possess a dominant monad. everything moves as one step. individual holons decide and delegate.
 
-social holons do not posess a dominant monad. each sub holon moves independently but can achieve collective activity.
+social holons do not posess a dominant monad. each sub holon moves independently but can achieve collective activity. social holons pool resources and provide medium of interaction (messages, money, etc).
 
 #### triggers and scanners
 
@@ -28,13 +28,17 @@ social holons do not posess a dominant monad. each sub holon moves independently
 
 a holon looks down for what it wants to command.
 
+example: delegate a task
+
 > Input hierarchies operate on the reverse principle; instead of triggers, they are equipped with "filter"-type devices (scanners, "resonators", classifiers) which strip the input of noise, abstract and digest its relevant contents, according to that particular hierarchy's criteria of relevance. "Filters" operate on every echelon through which the flow of information must pass on its ascent from periphery to centre, in social hierarchies and in the nervous system.
 
 a holon looks up for what it needs to cooperate with and integrate with.
 
+example: make a decision
+
 > Triggers convert coded signals into complex output patterns. Filters convert complex input patterns into coded signals. The former may be compared to digital-to-analogue converters, the latter to analogue-to-digital converters... Output hierarchies spell, concretize, particularize. Input hierarchies digest, abstract, generalize.
 
-a holon looks sideways for what it needs to compete with.
+a holon looks sideways for what it needs to share / compete with.
 
 #### references
 

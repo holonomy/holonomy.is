@@ -1,18 +1,12 @@
-### idea #2: open source economy
+### idea #2: free (as in freedom) technology
 
-#### production
-
-- respect the ecology
+- free (as in freedom) technology
 - collaborate on open source designs
 - produce using open source documentation
-
-#### consumption
-
-- share used products
-- consume sustainably
+- respect the existing equipment (ecology)
+- use open standards for better accessibility and security
 
 #### references
 
-TODO: need more references
-
+- ["The Free Software Definition"](http://www.gnu.org/philosophy/free-sw.html)
 - ["Open Source Ecology paradigm" by Marcin Jakubowski](http://opensourceecology.org/wiki/Open_Source_Ecology_Paradigm)

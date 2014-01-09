@@ -11,7 +11,11 @@ var _ = require('lodash');
 var banner = '/* <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n';
 var lessPaths = [
   'node_modules/semantic/src',
+  'node_modules/font-awesome/less',
   'styles',
+];
+var fontFiles = [
+  'node_modules/font-awesome/fonts/*',
 ];
 
 module.exports = function(grunt) {
@@ -36,7 +40,7 @@ module.exports = function(grunt) {
         assets: 'static/assets',
         partials: ['templates/includes/*.hbs'],
         helpers: ['templates/helpers/*.js'],
-        layout: 'templates/layouts/index.hbs',
+        layout: 'templates/layouts/layout.hbs',
         data: ['data/*.{json,yml}'],
       },
       build: {
@@ -88,6 +92,22 @@ module.exports = function(grunt) {
     // remove any previously-created files.
     clean: {
       build: ['build/**/*']
+    },
+
+    copy: {
+      assets: {
+        expand: true,
+        cwd: 'assets',
+        src: ['**'],
+        dest: 'build/',
+      },
+      fonts: {
+        src: fontFiles,
+        dest: 'build/fonts/',
+        expand: true,
+        flatten: true,
+        filter: 'isFile',
+      },
     },
 
     connect: {
@@ -180,8 +200,8 @@ module.exports = function(grunt) {
   });
 
   // register grunt tasks
-  grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'browserify:develop', 'connect:develop', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'browserify:deploy', /*'compress', */'hashres', 'gh-pages']);
+  grunt.registerTask('develop', ['clean', 'jshint', 'assemble', 'less:develop', 'browserify:develop', 'copy', 'connect:develop', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'jshint', 'assemble', 'less:deploy', 'browserify:deploy', 'copy', /*'compress', */'hashres', 'gh-pages']);
 
   // default task to be run.
   grunt.registerTask('default', ['clean', 'assemble', 'less:deploy', 'connect:default']);

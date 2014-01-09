@@ -1,16 +1,46 @@
+@import 'font-awesome.less';
+@fa-font-path:  "./fonts";
+
 @import 'elements/header.less';
 @import 'elements/button.less';
 @import 'collections/grid.less';
 @import 'collections/menu.less';
 
 body > header {
+
+  background-color: #FFD068;
   text-align: center;
+  min-height: 250px;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  min-height: 250px;
 
   h2 {
     color: rgba(0, 0, 0, 0.75);
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-top: 0;
   }
 }
 
 small {
   color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: FontAwesome;
+  margin: 0;
+
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.call-to-action {
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-holonomy is organized by you: anyone can contribute to holonomy development, all contributions are replicated to all holons by virtue of the technology being open source.
+we are all involved in holonomy; all contributions are replicated to all holons by virtue of the technology being open source.
 
 ### development
 
@@ -6,8 +6,12 @@ holonomy is organized by you: anyone can contribute to holonomy development, all
 
 ### discussion
 
-TODO: [on reddit](http://reddit.com/r/holonomy)
+[on reddit](http://reddit.com/r/holonomy)
 
-### funding / sponsorship
+### sponsorship
 
 [on BountySource](https://www.bountysource.com/teams/holonomy)
+
+### incubation
+
+host holonomy developers in housing cooperatives?

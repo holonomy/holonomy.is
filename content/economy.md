@@ -1,9 +1,24 @@
-### idea #2: free (as in freedom) technology
+### idea #2: economy
 
-- free (as in freedom) technology
+- flat economy
+- producers deal directly with consumers through technology
+- share and maintain the existing equipment (ecology)
+- individual holons have reputation
+  - slowly increments over all time and rapidly decrements when bad
+- social holons are a time bank
+  - workshift provides a common exchange of hours
+- social holons can spontaneously form insurance pools with peers
+- social holons agree on solidarity economy with collective ownership
+
+
+- top-level holons have a reserve currency
+  - decrements?
+
+### idea #3: craft
+
+- free (as in freedom) technology / craft
 - collaborate on open source designs
 - produce using open source documentation
-- respect the existing equipment (ecology)
 - use open standards for better accessibility and security
 
 #### references

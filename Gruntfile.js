@@ -16,6 +16,7 @@ var lessPaths = [
 ];
 var fontFiles = [
   'node_modules/font-awesome/fonts/*',
+  'node_modules/semantic/src/fonts/*',
 ];
 
 module.exports = function(grunt) {

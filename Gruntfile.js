@@ -109,6 +109,10 @@ module.exports = function(grunt) {
         flatten: true,
         filter: 'isFile',
       },
+      cname: {
+        src: 'CNAME',
+        dest: 'build/',
+      },
     },
 
     connect: {

@@ -151,7 +151,8 @@ module.exports = function(grunt) {
         files: _.map(lessPaths,
           function (p) { return p + '/*.less'; }
         ),
-        tasks: ['less'],
+        tasks: ['less:develop'],
+      },
       browserify: {
         files: 'scripts/**/*.js',
         tasks: ['browserify:develop'],

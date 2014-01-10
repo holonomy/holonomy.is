@@ -152,6 +152,9 @@ module.exports = function(grunt) {
           function (p) { return p + '/*.less'; }
         ),
         tasks: ['less'],
+      browserify: {
+        files: 'scripts/**/*.js',
+        tasks: ['browserify:develop'],
       },
       assemble: {
         files: ['README.md', 'templates/**/*.hbs', 'templates/helpers/*.js', 'content/**'],

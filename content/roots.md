@@ -6,6 +6,8 @@ we are all involved in holonomy; all contributions are replicated to all holons 
 
 ### discussion
 
+[on #holonomy](./irc.html)
+
 [on reddit](http://reddit.com/r/holonomy)
 
 ### sponsorship

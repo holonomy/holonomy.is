@@ -5,68 +5,79 @@
 
 var d3 = require('d3');
 
-var width = 960,
-    height = 300,
-    radius = 40,
-    x = Math.sin(2 * Math.PI / 3),
-    y = Math.cos(2 * Math.PI / 3);
+var x = Math.sin(2 * Math.PI / 3);
+var y = Math.cos(2 * Math.PI / 3);
 
-var offset = 0,
-    speed = 1,
-    start = Date.now();
+var frame = null;
 
-var svg = d3.select(".gears").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.55)")
-  .append("g");
+var offset = 0;
+var speed = 1;
+var start = Date.now();
 
-var frame = svg.append("g")
+var gears  = function (options) {
+  var width = options.width;
+  var height = options.height;
+  var radius = Math.min(width, height) / 6;
+
+  // set height and width of container
+  var svg = d3.select(options.selector)
+      .attr("width", width)
+      .attr("height", height);
+
+  // clear existing gears
+  svg.selectAll("g").remove();
+
+  // add new gears
+  frame = svg
+    .append("g")
+      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.55)")
+    .append("g")
     .datum({radius: Infinity});
 
-frame.append("g")
-    .attr("class", "annulus")
-    .datum({teeth: 40, radius: -radius * 5, annulus: true})
-  .append("path")
-    .attr("d", gear);
+  frame.append("g")
+      .attr("class", "annulus")
+      .datum({teeth: 40, radius: -radius * 5, annulus: true})
+    .append("path")
+      .attr("d", gear);
 
-frame.append("g")
-    .attr("class", "sun")
-    .datum({teeth: 8, radius: radius})
-  .append("path")
-    .attr("d", gear);
+  frame.append("g")
+      .attr("class", "sun")
+      .datum({teeth: 8, radius: radius})
+    .append("path")
+      .attr("d", gear);
 
-frame.append("g")
-    .attr("class", "planet")
-    .attr("transform", "translate(0,-" + radius * 3 + ")")
-    .datum({teeth: 16, radius: -radius * 2})
-  .append("path")
-    .attr("d", gear);
+  frame.append("g")
+      .attr("class", "planet")
+      .attr("transform", "translate(0,-" + radius * 3 + ")")
+      .datum({teeth: 16, radius: -radius * 2})
+    .append("path")
+      .attr("d", gear);
 
-frame.append("g")
-    .attr("class", "planet")
-    .attr("transform", "translate(" + -radius * 3 * x + "," + -radius * 3 * y + ")")
-    .datum({teeth: 16, radius: -radius * 2})
-  .append("path")
-    .attr("d", gear);
+  frame.append("g")
+      .attr("class", "planet")
+      .attr("transform", "translate(" + -radius * 3 * x + "," + -radius * 3 * y + ")")
+      .datum({teeth: 16, radius: -radius * 2})
+    .append("path")
+      .attr("d", gear);
 
-frame.append("g")
-    .attr("class", "planet")
-    .attr("transform", "translate(" + radius * 3 * x + "," + -radius * 3 * y + ")")
-    .datum({teeth: 16, radius: -radius * 2})
-  .append("path")
-    .attr("d", gear);
+  frame.append("g")
+      .attr("class", "planet")
+      .attr("transform", "translate(" + radius * 3 * x + "," + -radius * 3 * y + ")")
+      .datum({teeth: 16, radius: -radius * 2})
+    .append("path")
+      .attr("d", gear);
 
-d3.selectAll("input[name=reference]")
-    .data([radius * 5, Infinity, -radius])
-    .on("change", function(radius1) {
-      var radius0 = frame.datum().radius, angle = (Date.now() - start) * speed;
-      frame.datum({radius: radius1});
-      svg.attr("transform", "rotate(" + (offset += angle / radius0 - angle / radius1) + ")");
-    });
+  d3.selectAll("input[name=reference]")
+      .data([radius * 5, Infinity, -radius])
+      .on("change", function(radius1) {
+        var radius0 = frame.datum().radius, angle = (Date.now() - start) * speed;
+        frame.datum({radius: radius1});
+        svg.attr("transform", "rotate(" + (offset += angle / radius0 - angle / radius1) + ")");
+      });
+}
 
-function gear(d) {
+
+var gear = function gear(d) {
   var n = d.teeth,
       r2 = Math.abs(d.radius),
       r0 = r2 - 8,
@@ -88,8 +99,12 @@ function gear(d) {
 }
 
 d3.timer(function() {
-  var angle = (Date.now() - start) * speed,
-      transform = function(d) { return "rotate(" + angle / d.radius + ")"; };
-  frame.selectAll("path").attr("transform", transform);
-  frame.attr("transform", transform); // frame of reference
+  if (frame) {
+    var angle = (Date.now() - start) * speed;
+    var transform = function(d) { return "rotate(" + angle / d.radius + ")"; };
+    frame.selectAll("path").attr("transform", transform);
+    frame.attr("transform", transform); // frame of reference
+  }
 });
+
+module.exports = gears;

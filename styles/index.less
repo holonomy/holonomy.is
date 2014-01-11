@@ -6,6 +6,8 @@
 @import 'elements/icon.less';
 @import 'collections/grid.less';
 @import 'collections/menu.less';
+@import 'collections/form.less';
+@import 'views/list.less';
 
 @tiny: ~"only screen and (max-width: 768px)";
 @small: ~"only screen and (min-width: 768px) and (max-width: 991px)";
@@ -81,24 +83,31 @@ body > header {
   }
 }
 
-small {
-  color: rgba(0, 0, 0, 0.5);
+main > header.ui.grid > .column {
+  text-align: center;
+
+  .icon-container {
+    text-align: center;
+
+    i {
+      text-decoration: none;
+    }
+  }
+
+
+  p {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  ul {
+    text-align: left;
+  }
 }
 
 .call-to-action {
   text-align: center;
 }
 
-.icon-container {
-  text-align: center;
 
-  i {
-    text-decoration: none;
-  }
-}
-
-.one-col {
-  text-align: center;
-}
 
 

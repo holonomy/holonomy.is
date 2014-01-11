@@ -1,21 +1,14 @@
-holonomy brings together the technology for a holon like you.
+### ideas to be developed
 
-holonic implies free and open, self-hosted web app used by holons.
+- [identity as holons](https://github.com/holonomy/id)
+- [delegate tasks amongst holons](https://github.com/holonomy/tasks)
+- [governance amongst holons](https://github.com/holonomy/control)
+- marketplace amongst holons
+- inventory amongst holons
 
-### in development
+### tools to be deployed
 
-- [holonic identity](https://github.com/holonomy/id)
-- [holonic task delegation](https://github.com/holonomy/tasks)
-
-### planned
-
-- [holonic decision-making](https://github.com/holonomy/control)
-- holonic market interactions
-- holonic inventory sharing
-- [holonic wallet](http://coinpunk.org/)
-- [holonic messaging](https://mailpile.is/)
-- [holonic activity](http://pump.io/)
-- [holonic discussion](http://discourse.org/)
-- ...
-
-### in production
+- [wallets for holons](http://coinpunk.org/)
+- [messaging to holons](https://mailpile.is/)
+- [discussion within holons](http://discourse.org/)
+- [activity of holons](http://pump.io/)

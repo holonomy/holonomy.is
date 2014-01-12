@@ -8,7 +8,7 @@
     </div>
 
     <h2>
-      <a href="{{relative page "learn.html"}}#learn">Learn</a>
+      <a href="./learn.html">Learn</a>
     </h2>
 
     <p class="ui medium header">
@@ -17,13 +17,13 @@
 
     <ul class="ui">
       <li>
-        a <a href="{{relative page "learn.html"}}#holons">holon</a> is something that is simultaneously a whole and a part
+        a <a href="./learn.html#holons">holon</a> is something that is simultaneously a whole and a part
       </li>
       <li>
-        a <a class="item" href="{{relative page "learn.html"}}#economy">economy</a> is the community managing itself
+        a <a class="item" href="./learn.html#economy">economy</a> is the community managing itself
       </li>
       <li>
-        a <a class="item" href="{{relative page "learn.html"}}#technology">technology</a> is the community using a tool
+        a <a class="item" href="./learn.html#technology">technology</a> is the community using a tool
       </li>
     </ul>
   </section>
@@ -31,42 +31,38 @@
   <section class="ui header column">
 
     <div class="ui horizontal icon-container divider">
-      <a href="{{relative page "create.html"}}#create">
-        <i class="big circular wrench icon link"></i>
-      </a>
+      <i class="big circular wrench icon link"></i>
     </div>
 
     <h2>
-      <a href="{{relative page "create.html"}}#create">Create</a>
+      Create
     </h2>
 
     <p class="ui medium header">
       develop tools collaboratively and deploy tools collectively
     </p>
 
-    {{md 'content/projects.md'}}
+    {{partial "projects.html.md"}}
 
   </section>
 
   <section class="ui header column">
 
     <div class="ui horizontal icon-container divider">
-      <a href="{{relative page "create.html"}}#create">
-        <i class="big circular wrench icon link"></i>
-      </a>
+      <i class="big circular users icon link"></i>
     </div>
 
     <h2>
-      <a href="{{relative page "organize.html"}}#organize">Organize</a>
+      Organize
     </h2>
 
     <p class="ui medium header">
       holons working together for the benefit of all holons
     </p>
 
-    {{> call-to-action }}
+    {{partial "call-to-action.html.hb"}}
 
-    {{md 'content/roots.md'}}
+    {{partial "roots.html.md"}}
 
   </section>
 

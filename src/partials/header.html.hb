@@ -1,10 +1,6 @@
----
-component: navbar
----
 <header class="ui header horizontal divider">
   
   <svg class="gears"></svg>
-  <!--{{ghbtn size="small" user=site.title repo=site.title}}-->
 
   <h1>{{ site.title }}</h1>
   <h2>{{ site.description }}</h2>

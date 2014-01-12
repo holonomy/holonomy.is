@@ -9,9 +9,9 @@
   </head>
   <body>
 
-    {{> header}}
+    {{partial "header.html.hb"}}
 
-    {{> body }}
+    {{{ content }}}
 
     <script src="index.js"></script>
   </body>

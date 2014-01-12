@@ -1,5 +1,6 @@
 ---
-title: learn
+title: "learn"
+layout: "default"
 ---
 <main id="learn">
   <header class="ui header">
@@ -13,7 +14,7 @@ title: learn
 
   </header>
 
-  {{md 'content/axioms/holons.md'}}
-  {{md 'content/axioms/economy.md'}}
-  {{md 'content/axioms/technology.md'}}
+  {{partial "axioms/holons.html.md"}}
+  {{partial "axioms/economy.html.md"}}
+  {{partial "axioms/technology.html.md"}}
 </main>

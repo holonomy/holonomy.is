@@ -21,7 +21,7 @@
     "d3": "~3.3.13",
     "safeps": "~2.2.11"
   },
-  "main": "docpad-server",
+  "main": "node_modules/.bin/docpad-server",
   "scripts": {
     "start": "node ."
   },

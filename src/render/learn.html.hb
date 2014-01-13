@@ -5,7 +5,7 @@ layout: "default"
 <main id="learn">
   <header class="ui header">
     <h2>
-      <a href="{{relative page "learn.html"}}#learn">Learn</a>
+      <a href="./learn.htmlg#learn">Learn</a>
     </h2>
 
     <p class="medium header">

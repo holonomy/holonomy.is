@@ -4,7 +4,7 @@ module.exports = {
   templateData: {
     site: {
       title: "holonomy is",
-      description: "technology for self-organized collective ownership",
+      description: "technology for self-organized collective infrastructure",
     },
   },
   plugins: {
@@ -19,7 +19,7 @@ module.exports = {
       },
     },
     browserifybundler: {
-      inFiles: "scripts/index.js",
+      inFiles: "/scripts/index.js",
       outFile: "index.js",
     },
   },

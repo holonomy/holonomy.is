@@ -2,7 +2,7 @@
 
   <section class="ui header centered column">
     <div class="ui horizontal icon-container divider">
-      <a href="{{relative page "learn.html"}}#learn">
+      <a href=learn.html#learn">
         <i class="big circular book icon link"></i>
       </a>
     </div>

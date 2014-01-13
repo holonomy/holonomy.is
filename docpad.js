@@ -20,7 +20,7 @@ module.exports = {
     },
     browserifybundler: {
       inFiles: "/scripts/index.js",
-      outFile: "index.js",
+      outFile: "/scripts/bundle.js",
     },
   },
   environments: {

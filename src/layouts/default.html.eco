@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @site.title %> <%= @title %></title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg" />-->
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(["/styles/index.css"]).toHTML() %>
+  </head>
+  <body>
+
+    <%- @partial("header.html.hb") %>
+
+    <%- @content %>
+    <%- @getBlock("scripts").add(["/scripts/bundle.js"]).toHTML() %>
+  </body>
+</html>

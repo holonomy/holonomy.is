@@ -30,6 +30,7 @@
     "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-less": "~2.4.0",
     "docpad-plugin-browserifybundler": "~2.0.3",
-    "docpad-plugin-marked": "~2.2.0"
+    "docpad-plugin-marked": "~2.2.0",
+    "docpad-plugin-eco": "~2.0.3"
   }
 }

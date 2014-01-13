@@ -9,6 +9,7 @@ TODO.md
 *.sublime-*
 *.swp
 
-/build
-/.grunt
+/out
+.docpad.db
 
+/src/scripts/bundle.js

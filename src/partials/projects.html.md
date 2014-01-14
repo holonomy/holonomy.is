@@ -1,3 +1,6 @@
+---
+---
+
 ### ideas to be developed
 
 - [identity as holons](https://github.com/holonomy/id)

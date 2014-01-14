@@ -1,4 +1,3 @@
-
 - develop holonomy at [GitHub](https://github.com/holonomy)
 - chat about holonomy [on #holonomy](./irc.html)
 - post about holonomy [on reddit](http://reddit.com/r/holonomy)

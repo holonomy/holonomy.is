@@ -1,3 +1,6 @@
+---
+---
+
 ### holons
 
 the idea of the "holon" was introduced by Arthur Koestler in The Ghost in the Machine (1967) and was presented again at the Alpbach Symposium (1968) in a paper titled: Beyond Atomism and Holism - the concept of the holon. <a href="http://www.panarchy.org/koestler/holon.1969.html" class="button">full text</a>

@@ -22,6 +22,14 @@ module.exports = {
       inFiles: "/scripts/index.js",
       outFile: "/scripts/bundle.js",
     },
+    raw: {
+      'font-awesome': {
+        command: ['cp', '-r', './node_modules/font-awesome/fonts', './out/fonts/font-awesome'],
+      },
+      semantic: {
+        command: ['cp', '-r', './node_modules/semantic/src/fonts', './out/fonts/semantic'],
+      },
+    },
   },
   environments: {
     development: {

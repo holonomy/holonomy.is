@@ -1,14 +1,9 @@
-<header class="ui three column divided grid">
+<main>
 
-  <section class="ui header centered column">
-    <div class="ui horizontal icon-container divider">
-      <a href=learn.html#learn">
-        <i class="big circular book icon link"></i>
-      </a>
-    </div>
+  <section>
 
     <h2>
-      <a href="./learn.html">Learn</a>
+      Learn
     </h2>
 
     <p class="ui medium header">
@@ -28,11 +23,7 @@
     </ul>
   </section>
 
-  <section class="ui header column">
-
-    <div class="ui horizontal icon-container divider">
-      <i class="big circular wrench icon link"></i>
-    </div>
+  <section>
 
     <h2>
       Create
@@ -46,11 +37,7 @@
 
   </section>
 
-  <section class="ui header column">
-
-    <div class="ui horizontal icon-container divider">
-      <i class="big circular users icon link"></i>
-    </div>
+  <section>
 
     <h2>
       Organize
@@ -66,4 +53,4 @@
 
   </section>
 
-</header>
+</main>

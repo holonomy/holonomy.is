@@ -36,6 +36,7 @@
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-raw": "git+https://github.com/ahdinosaur/docpad-plugin-raw.git",
     "docpad-plugin-ghpages": "~2.4.2",
-    "longjohn": "~0.2.2"
+    "longjohn": "~0.2.2",
+    "docpad-plugin-livereload": "~2.5.6"
   }
 }

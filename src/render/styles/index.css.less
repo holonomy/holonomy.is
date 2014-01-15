@@ -110,26 +110,40 @@ body > header.ui.stackable.grid {
       }
     }
   }
-
 }
 
-main > section.ui.grid > .column {text-align: center;
+body > nav {
 
-  .icon-container {
+  .ui.menu {
+
     text-align: center;
+    font-size: 1rem;
 
-    i {
-      text-decoration: none;
+    .item {
+
+      a {
+        text-decoration: none;
+      }
+    }
+    
+    .menu {
+      margin-left: 0.5em;
+      font-size: 0.9em;
+    }
+    .menu.inactive {
+      display: none;
     }
   }
+}
 
+body > main > section {
+
+  h2 {
+   text-align: center;
+  }
 
   p {
     color: rgba(0, 0, 0, 0.7);
-  }
-
-  ul {
-    text-align: left;
   }
 }
 

@@ -4,6 +4,7 @@
     <title><%= @site.title %> <%= @document.title || @site.description %></title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!--<link rel="icon" type="image/svg+xml" href="favicon.svg" />-->
+    <meta charset="utf-8" />
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").add(["/styles/index.css"]).toHTML() %>
   </head>

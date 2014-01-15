@@ -24,7 +24,7 @@
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
     "start": "node .",
-    "deploy": "git remote add target git@github.com:holonomy/holonomy.github.io.git; docpad-compile && docpad deploy-ghpages --env static"
+    "deploy": "git remote add target git@github.com:holonomy/holonomy.github.io.git; docpad deploy-ghpages --env static"
   },
   "devDependencies": {
     "docpad-plugin-handlebars": "~2.3.0",

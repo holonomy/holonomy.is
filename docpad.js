@@ -9,6 +9,7 @@ module.exports = {
       description: "where the economy is free (as in freedom) and flat (without hierarchy)",
     },
   },
+  detectEncoding: true,
   plugins: {
     handlebars: {
       helpers: {

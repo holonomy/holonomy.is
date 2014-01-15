@@ -20,7 +20,7 @@ var gears  = function (options) {
   var radius = Math.min(width, height) / 6;
 
   // set height and width of container
-  var svg = d3.select(options.selector)
+  var svg = d3.select(options.selector).append("svg")
       .attr("width", width)
       .attr("height", height);
 

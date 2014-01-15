@@ -18,11 +18,13 @@
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.11.0",
     "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome#v4.0.3",
     "domready": "~0.2.13",
-    "d3": "~3.3.13"
+    "d3": "~3.3.13",
+    "marked": "~0.3.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "deploy": "git remote add target git@github.com:holonomy/holonomy.github.io.git; docpad-compile && docpad deploy-ghpages --env static"
   },
   "devDependencies": {
     "docpad-plugin-handlebars": "~2.3.0",
@@ -31,6 +33,7 @@
     "docpad-plugin-browserifybundler": "~2.0.3",
     "docpad-plugin-marked": "~2.2.0",
     "docpad-plugin-eco": "~2.0.3",
-    "docpad-plugin-raw": "~2.2.2"
+    "docpad-plugin-raw": "git+https://github.com/ahdinosaur/docpad-plugin-raw.git",
+    "docpad-plugin-ghpages": "~2.4.2"
   }
 }

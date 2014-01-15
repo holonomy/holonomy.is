@@ -1,5 +1,4 @@
 ---
-title: site.description
 layout: "default"
 ---
 <main>

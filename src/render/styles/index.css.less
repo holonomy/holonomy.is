@@ -1,5 +1,5 @@
 @import '../../../node_modules/font-awesome/less/font-awesome.less';
-@fa-font-path:  "./fonts/font-awesome/";
+@fa-font-path:  "../fonts";
 
 @import '../../../node_modules/semantic/src/elements/header.less';
 @import '../../../node_modules/semantic/src/elements/button.less';
@@ -14,25 +14,44 @@
 @medium: ~"only screen and (min-width: 992px) and (max-width: 1200px)";
 @large: ~"only screen and (min-width: 1201px)";
 
-html {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-body {
   font-family: FontAwesome;
-  margin: 0;
-  height: 100%;
 }
 
-body > header {
+body > header.ui.stackable.grid {
 
-  background-color: #FFD068;
+  background: linear-gradient(to bottom,
+    #FFD068,
+    #C3703C
+  );
   text-align: center;
-  background-repeat: repeat-x;
-  background-position: bottom;
-  height: 100%;
+
+  @media @tiny {
+    height: 14rem;
+  }
+  @media @small {
+    height: 16rem;
+  }
+  @media @medium {
+    height: 18rem;
+  }
+  @media @large {
+    height: 20rem;
+  }
+
+  > .column.gears {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    @media @tiny {
+      height: 6rem;
+    }
+    height: 100%;
+  }
 
   .sun path {
     fill: rgba(0, 0, 0, 0.6);
@@ -46,41 +65,53 @@ body > header {
     fill: rgba(0, 0, 0, 0.8);
   }
 
-  h1 {
-    margin-top: 0;
+  > .column {
 
     @media @tiny {
-      font-size: 2rem;
+      margin: 0 !important;
+      padding: 0 !important;
+      text-align: center;
     }
-    @media @small {
-      font-size: 2.5rem;
+
+    h1 {
+      margin: 0;
+
+      @media @tiny {
+        display: inline-block;
+        font-size: 2.5rem;
+      }
+      @media @small {
+        font-size: 3rem;
+      }
+      @media @medium {
+        font-size: 4rem;
+      }
+      @media @large {
+        font-size: 6rem;
+      }
     }
-    @media @medium {
-      font-size: 3rem;
-    }
-    @media @large {
-      font-size: 4rem;
+
+    p {
+      margin: 0;
+
+      color: rgba(0, 0, 0, 0.75);
+
+      @media @tiny {
+        display: inline-block;
+        font-size: 2;
+      }
+      @media @small {
+        font-size: 2.3rem;
+      }
+      @media @medium {
+        font-size: 2.8rem;
+      }
+      @media @large {
+        font-size: 3rem;
+      }
     }
   }
 
-  h2 {
-    margin-top: 0;
-
-    color: rgba(0, 0, 0, 0.75);
-
-    @media @tiny {
-      font-size: 1.75;
-    }
-    @media @small {
-      font-size: 2.2rem;
-    }
-    @media @medium {
-      font-size: 1.7rem;
-    }
-    @media @large {
-      font-size: 3.5rem;
-    }
-  }
 }
 
 main > header.ui.grid > .column {

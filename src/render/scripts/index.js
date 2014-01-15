@@ -3,15 +3,26 @@ var domready = require('domready');
 var gears = require('./gears');
 
 domready(function () {
+  console.log("domready!");
 
-  var sizeGears = function () {
+  var setGears = function () {
+    var gearsSelector = 'body > header .gears';
+    var gearsContainerEl = document.querySelector(gearsSelector);
+    var gearsSvgEl = gearsContainerEl.querySelector('svg');
+    if (gearsSvgEl) {
+      gearsContainerEl.removeChild(gearsSvgEl)
+    }
+
+    var gearsWidth = gearsContainerEl.clientWidth;
+    var gearsHeight = gearsContainerEl.clientHeight;
+    
     gears({
-      selector: 'body > header > .gears ',
-      width: window.innerWidth * 0.9,
-      height: window.innerHeight * 0.5,
+      selector: gearsSelector,
+      width: gearsContainerEl.clientWidth,
+      height: gearsContainerEl.clientHeight,
     });
   }
 
-  window.onresize = sizeGears;
-  sizeGears();
+  window.onresize = setGears;
+  setGears();
 });

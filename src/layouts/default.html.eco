@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= @site.title %> <%= @title %></title>
+    <title><%= @site.title %> <%= @document.title || @site.description %></title>
     <link rel="shortcut icon" href="favicon.ico" />
     <!--<link rel="icon" type="image/svg+xml" href="favicon.svg" />-->
     <%- @getBlock("meta").toHTML() %>
@@ -12,6 +12,6 @@
     <%- @partial("header.html.hb") %>
 
     <%- @content %>
-    <%- @getBlock("scripts").add(["/scripts/bundle.js"]).toHTML() %>
+    <%- @getBlock("scripts").add("/scripts/bundle.js").toHTML() %>
   </body>
 </html>

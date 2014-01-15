@@ -1,9 +1,12 @@
-<header class="ui header horizontal divider">
+<header class="ui sixteen column stackable header grid">
   
-  <svg class="gears"></svg>
+  <div class="four wide column gears">
+  </div>
 
-  <h1>{{ site.title }}</h1>
-  <h2>{{ site.description }}</h2>
+  <div class="twelve wide column">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </div>
   
 </header>
 

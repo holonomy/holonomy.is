@@ -1,12 +1,15 @@
 // http://docpad.org/docs/config
 
+require('longjohn');
+
 var _ = require('lodash');
 
 module.exports = {
   templateData: {
     site: {
       title: "holonomy is",
-      description: "where the economy is free (as in freedom) and flat (without hierarchy)",
+      //many parts collectively owning a whole consciousness
+      description: "an open source hive mind",
     },
   },
   detectEncoding: true,

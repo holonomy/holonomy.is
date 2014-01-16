@@ -1,11 +1,11 @@
 <nav>
-  <ul class="ui menu">
-    <li class="item">
+  <ul class="ui pointing menu">
+    <li class="why item">
       <a href="#why">
         <i class="big circular bullhorn icon"></i>
         Why
       </a>
-      <ul class="inactive menu">
+      <ul class="ui secondary menu">
         <li class="item">
           <a href="#why/awaken">
             <i class="lightbulb icon"></i>
@@ -27,12 +27,12 @@
       </ul>
     </li>
 
-    <li class="item">
+    <li class="how item">
       <a href="#how">
         <i class="big circular wrench icon"></i>
         How
       </a>
-      <ul class="inactive menu">
+      <ul class="ui secondary menu">
         <li class="item">
           <a href="#how/holons">
             <i class="users icon"></i>
@@ -60,12 +60,12 @@
       </ul>
     </li>
 
-    <li class="item">
+    <li class="what item">
       <a href="#what">
         <i class="big circular users icon"></i>
         What
       </a>
-      <ul class="inactive menu">
+      <ul class="ui secondary menu">
         <li class="item">
           <a href="#what/projects">
             <i class="settings icon"></i>

@@ -124,15 +124,22 @@ body > nav {
       a {
         text-decoration: none;
       }
-    }
     
-    .menu {
-      margin-left: 0.5em;
-      font-size: 0.9em;
+      .menu {
+        margin-left: 0.5em;
+        font-size: 0.9em;
+        display: none;
+      }
     }
-    .menu.inactive {
-      display: none;
+    .active.item .menu {
+      display: block;
     }
+  }
+
+  .sticky.ui.menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
 }
 

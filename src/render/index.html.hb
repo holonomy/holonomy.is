@@ -2,4 +2,9 @@
 layout: "default"
 ---
 {{partial "menu.html.hb"}}
-{{partial "learn-create-organize.html.hb"}}
+
+<main>
+  {{partial "why.html.hb"}}
+  {{partial "how.html.hb"}}
+  {{partial "what.html.hb"}}
+</main>

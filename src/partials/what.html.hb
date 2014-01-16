@@ -1,6 +1,7 @@
 <section class="what">
   <header>
-    <h2 id="what">
+    <a class="anchor" id="what"></a>
+    <h2>
       What
     </h2>
   </header>

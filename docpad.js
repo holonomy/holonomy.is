@@ -9,7 +9,7 @@ module.exports = {
     site: {
       title: "holonomy is",
       //many parts collectively owning a whole consciousness
-      description: "the hive mind economy",
+      description: "an experimental hive mind economy",
     },
   },
   detectEncoding: true,

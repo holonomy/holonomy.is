@@ -32,17 +32,18 @@ var setWaypoints = function () {
   mainMenu.waypoint({
     handler: function (direction) {
       if (direction == 'down') {
-        nav.css({ 'height': mainMenu.outerHeight() });
+        nav.css({ height: mainMenu.outerHeight() });
+        $('a.anchor').css({ top: -mainMenu.outerHeight() });
+        mainMenu.toggleClass('sticky', true);
       } else {
-        nav.css({ 'height':'auto' });
+        nav.css({ height: 'auto' });
+        mainMenu.toggleClass('sticky', false);
       }
-      mainMenu.toggleClass('sticky', direction === 'down');
     },
   });
 
   // setup waypoints for nested menus
   var setMenuWaypoints = function (menu) {
-    console.log("waypoints!", menu);
     // if no menu or array of 0 menus, return
     if (!(menu && menu.length)) { return; }
 
@@ -77,6 +78,11 @@ var setWaypoints = function () {
             // activate previous item
             item.prev().toggleClass('active', true);
           }
+          // refresh nav and waypoints offset
+          nav.css({ height: mainMenu.outerHeight() });
+        },
+        offset: function () {
+          return nav.outerHeight()
         },
       });
 

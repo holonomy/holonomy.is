@@ -4,6 +4,7 @@
 @import '../../../node_modules/semantic/src/elements/header.less';
 @import '../../../node_modules/semantic/src/elements/button.less';
 @import '../../../node_modules/semantic/src/elements/icon.less';
+@import '../../../node_modules/semantic/src/elements/divider.less';
 @import '../../../node_modules/semantic/src/collections/grid.less';
 @import '../../../node_modules/semantic/src/collections/menu.less';
 @import '../../../node_modules/semantic/src/collections/form.less';
@@ -140,13 +141,14 @@ body > nav {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
   }
 }
 
 body > main > section {
 
-  h2 {
-   text-align: center;
+  header {
+    text-align: center;
   }
 
   p {

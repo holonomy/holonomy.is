@@ -1,5 +1,5 @@
 // epicyclic gear source:
-//
+// http://bl.ocks.org/mbostock/1353700
 
 // TODO: endless zoom into recursive epicyclic gears
 

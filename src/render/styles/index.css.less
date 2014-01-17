@@ -5,6 +5,7 @@
 @import '../../../node_modules/semantic/src/elements/button.less';
 @import '../../../node_modules/semantic/src/elements/icon.less';
 @import '../../../node_modules/semantic/src/elements/divider.less';
+@import '../../../node_modules/semantic/src/elements/segment.less';
 @import '../../../node_modules/semantic/src/collections/grid.less';
 @import '../../../node_modules/semantic/src/collections/menu.less';
 @import '../../../node_modules/semantic/src/collections/form.less';
@@ -152,7 +153,19 @@ body > main > section {
   }
 
   p {
-    color: rgba(0, 0, 0, 0.7);
+    .ui.segment;
+    .ui.raised.segment;
+    .ui.center.aligned.segment;
+  }
+
+  ul {
+    .ui.list;
+
+    li {
+      .ui.list .item;
+      .ui.large.list .item;
+      .ui.link.list .item;
+    }
   }
 
   a.anchor {

@@ -146,14 +146,11 @@ body > nav {
   }
 }
 
-body > main > section {
+body > main.ui.grid > section.column {
 
-  header {
-    text-align: center;
-  }
+  text-align: center;
 
   ul {
-    text-align: center;
     .ui.list;
 
     li {
@@ -168,8 +165,12 @@ body > main > section {
     position: relative;
     visibility: hidden;
   }
-}
 
-.call-to-action {
-  text-align: center;
+  p {
+    display: inline-block;
+  }
+
+  .action.segment {
+    display: inline-block;
+  }
 }

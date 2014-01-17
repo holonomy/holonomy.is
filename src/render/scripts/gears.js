@@ -74,6 +74,8 @@ var gears  = function (options) {
         frame.datum({radius: radius1});
         svg.attr("transform", "rotate(" + (offset += angle / radius0 - angle / radius1) + ")");
       });
+
+  return svg;
 }
 
 

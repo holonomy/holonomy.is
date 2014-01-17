@@ -7,7 +7,7 @@
     </h2>
   </header>
 
-  <p>
+  <p class="ui green center aligned segment">
   forget all the constraints of today's socio-economic structure. then write down what is possible in your imagination.
   </p>
 

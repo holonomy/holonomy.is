@@ -7,7 +7,9 @@
     </h2>
   </header>
 
-  <p>contribute any individual knowledge to advance our collective knowledge! remember, all ideas are old ideas, so let's bring the best old ideas to light.</p>
+  <p class="ui blue center aligned segment">
+  contribute any individual knowledge to advance our collective knowledge! remember, all ideas are old ideas, so let's bring the best ideas to light.
+  </p>
 
   {{partial "research.html.md"}}
 </section>

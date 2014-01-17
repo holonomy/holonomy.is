@@ -7,12 +7,11 @@
     </h2>
   </header>
 
-  <p>
-    if you've made it this far, please
-    {{partial "call-to-action.html.hb"}}
-  </p>
+  {{partial "call-to-action.html.hb"}}
 
-  <p>create the change we imagine to be possible.</p>
+  <p class="ui red center aligned segment">
+  create the change we imagine to be possible.
+  </p>
 
   {{partial "projects.html.md"}}
 </section>

@@ -1,6 +1,8 @@
 ---
 ---
 
+TODO: idea gists
+
 - identity as a holon (individual and social groupings)
 - bottom-up decision-making amongst holons
 - marketplace where producers, transporters, storagers, assemblers, ..., consumers deal directly

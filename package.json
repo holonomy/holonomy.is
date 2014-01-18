@@ -1,17 +1,17 @@
 {
-  "name": "holonomy-website",
+  "name": "holonomy.is",
   "version": "0.2.0",
-  "description": "holonomy website",
+  "description": "holonomy.is website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/holonomy/website.git"
+    "url": "git://github.com/holonomy/holonomy.is.git"
   },
   "author": "",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/holonomy/website/issues"
+    "url": "https://github.com/holonomy/holonomy.is/issues"
   },
-  "homepage": "https://github.com/holonomy/website",
+  "homepage": "http://holonomy.is"
   "dependencies": {
     "docpad": "~6.59.6",
     "lodash": "~2.4.1",

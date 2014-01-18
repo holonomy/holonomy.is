@@ -24,10 +24,7 @@ html, body {
 }
 
 body > header.ui.stackable.grid {
-  background: linear-gradient(to bottom,
-    #C3703C,
-    #FFD068
-  );
+  background: linear-gradient(to bottom, #C3703C, #FFD068);
   text-align: center;
 
   @media @tiny {
@@ -47,7 +44,11 @@ body > header.ui.stackable.grid {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: -webkit-radial-gradient(circle farthest-corner, #00ff00 20%, transparent 70%);
+    background: -webkit-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
+    background: -moz-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
+    background: -ms-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
+    background: -o-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, #00ff00 20%, transparent 70%);
 
     @media @tiny {
       height: 6rem;

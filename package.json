@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/holonomy/holonomy.is/issues"
   },
-  "homepage": "http://holonomy.is"
+  "homepage": "http://holonomy.is",
   "dependencies": {
     "docpad": "~6.59.6",
     "lodash": "~2.4.1",

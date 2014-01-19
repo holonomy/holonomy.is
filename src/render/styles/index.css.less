@@ -113,6 +113,10 @@ body > header.ui.stackable.grid {
         font-size: 3rem;
       }
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -152,13 +156,23 @@ body > main.ui.grid > section.column {
 
   text-align: center;
 
-  ul {
+  > ul {
     .ui.list;
 
-    li {
-      .ui.list .item;
-      .ui.large.list .item;
-      .ui.link.list .item;
+    > li {
+      .ui.divided.list .item;
+      .ui.huge.list .item;
+
+      ul {
+        .ui.list;
+
+        li {
+          .ui.list .item;
+          .ui.link.list .item;
+          font-size: 0.9em;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
     }
   }
 
@@ -175,4 +189,8 @@ body > main.ui.grid > section.column {
   .action.segment {
     display: inline-block;
   }
+}
+.imagine.column ul li {
+  .ui.link.list .item;
+  color: rgba(0, 0, 0, 0.7);
 }

@@ -1,7 +1,7 @@
 ---
 ---
 
-TODO: idea gists
+TODO: expand ideas into gists
 
 - identity as a holon (individual and social groupings)
 - bottom-up decision-making amongst holons

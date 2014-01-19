@@ -1,10 +1,11 @@
 ---
 ---
 
-- [holonomy/id](https://github.com/holonomy/id)
-- [holonomy/tasks](https://github.com/holonomy/tasks)
-- [holonomy/control](https://github.com/holonomy/control)
-- [kyledrake/coinpunk](http://coinpunk.org/)
-- [pagekite/mailpile](https://mailpile.is/)
-- [discourse/discourse](http://discourse.org/)
-- [e14n/pump.io](http://pump.io/)
+- software
+  - [holonomy/id](https://github.com/holonomy/id): identity for holons
+  - [holonomy/tasks](https://github.com/holonomy/tasks): task delegation for holons
+  - [holonomy/control](https://github.com/holonomy/control): decision-making for holons
+  - [kyledrake/coinpunk](http://coinpunk.org/): Bitcoin wallet
+  - [pagekite/mailpile](https://mailpile.is/): email server
+  - [discourse/discourse](http://discourse.org/): discussion platform
+  - [e14n/pump.io](http://pump.io/): social activity stream

@@ -1,7 +1,15 @@
 ---
 ---
 
-- [a **holon**](http://www.panarchy.org/koestler/holon.1969.html)
-- [open source ecology](http://opensourceecology.org/wiki/Open_Source_Ecology_Paradigm)
-- [free (as in freedom) tools](http://wiki.fsfe.org/Transcripts)
-- [open source infrastructure](http://www.debian.org/social_contract)
+- about systems
+  - [**holons**, or "self-regulating open hierarchic order"](http://en.wikipedia.org/wiki/Holon_%28philosophy%29)
+  - ["Gödel, Escher, Bach"](http://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach)
+  - ["The Black Swan"](http://www.black-swans-explained.com/)
+- about open source software
+  - ["Free Software: Freedom and Cooperation"](http://punkcast.com/64/index.html) ([audio](http://audio-video-dev.gnu.org/video/66/richard-m-stallmans-speech-fre) + [transcript](http://www.gnu.org/events/rms-nyu-2001-transcript.txt))
+  - ["The Cathedral and the Bazaar"](http://www.catb.org/~esr/writings/homesteading/)
+  - ["Why Open Source Software / Free Software? Look at the Numbers!"](http://www.dwheeler.com/oss_fs_why.html)
+- about alternative economies
+  - ["Open Source Ecology Paradigm"](http://opensourceecology.org/wiki/Open_Source_Ecology_Paradigm)
+  - ["Telekommunist Manifesto"](http://telekommunisten.net/the-telekommunist-manifesto/)
+  - ["New Libertarian Manifesto"](http://agorism.info/docs/NewLibertarianManifesto.pdf)

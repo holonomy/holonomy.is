@@ -4,7 +4,7 @@
   </div>
 
   <div class="twelve wide column">
-    <h1>{{ site.title }}</h1>
+    <h1><a href="http://en.wikipedia.org/wiki/Holon_%28philosophy%29">holon</a>omy is</h1>
     <p>{{ site.description }}</p>
   </div>
   

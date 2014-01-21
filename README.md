@@ -21,4 +21,4 @@ npm install
 
 ## license
 
-licensed under the [AGPLv3 license](LICENSE).
+licensed under the [MIT license](LICENSE).

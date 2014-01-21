@@ -14,4 +14,11 @@
   </p>
 
   {{partial "projects.html.md"}}
+
+  <p class="ui blue center aligned segment">
+    to contribute solidarity projects, edit
+    <a href="https://github.com/holonomy/holonomy.is/blob/master/src/partials/projects.html.md">here</a>
+    and
+    <a href="https://help.github.com/articles/using-pull-requests">submit a pull request</a>.
+  </p>
 </section>

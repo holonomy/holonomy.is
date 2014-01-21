@@ -14,7 +14,7 @@
   {{partial "research.html.md"}}
 
   <p class="ui blue center aligned segment">
-    to contribute insightful resources, edit
+    to contribute insightful awareness, edit
     <a href="https://github.com/holonomy/holonomy.is/blob/master/src/partials/research.html.md">here</a>
     and
     <a href="https://help.github.com/articles/using-pull-requests">submit a pull request</a>.

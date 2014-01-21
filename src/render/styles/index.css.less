@@ -11,6 +11,8 @@
 @import '../../../node_modules/semantic/src/collections/form.less';
 @import '../../../node_modules/semantic/src/views/list.less';
 
+@import './colors.less';
+
 @tiny: ~"only screen and (max-width: 768px)";
 @small: ~"only screen and (min-width: 768px) and (max-width: 991px)";
 @medium: ~"only screen and (min-width: 992px) and (max-width: 1200px)";
@@ -21,6 +23,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: FontAwesome;
+  color: @black;
 }
 
 body > header.ui.stackable.grid {
@@ -44,11 +47,11 @@ body > header.ui.stackable.grid {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: -webkit-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
-    background: -moz-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
-    background: -ms-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
-    background: -o-radial-gradient(50% 50%, circle, #00ff00 20%, transparent 70%);
-    background: radial-gradient(circle at 50% 50%, #00ff00 20%, transparent 70%);
+    background: -webkit-radial-gradient(50% 50%, circle, @green 20%, transparent 70%);
+    background: -moz-radial-gradient(50% 50%, circle, @green 20%, transparent 70%);
+    background: -ms-radial-gradient(50% 50%, circle, @green 20%, transparent 70%);
+    background: -o-radial-gradient(50% 50%, circle, @green 20%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, @green 20%, transparent 70%);
 
     @media @tiny {
       height: 6rem;
@@ -91,6 +94,31 @@ body > header.ui.stackable.grid {
       }
       @media @large {
         font-size: 6.3rem;
+      }
+
+      @stroke:
+         -1px -1px 0 @black,  
+          1px -1px 0 @black,
+         -1px 1px 0 @black,
+          1px 1px 0 @black;
+
+      a {
+        color: @green;
+        text-shadow: @stroke;
+      }
+      a:link {
+        color: @green;
+        text-shadow: @stroke;
+      }
+      a:visited {
+        color: @black;
+      }
+      a:hover {
+        color: @green;
+        text-shadow: @stroke;
+      }
+      a:active {
+        color: @black;
       }
     }
 
@@ -193,4 +221,12 @@ body > main.ui.grid > section.column {
 .imagine.column ul li {
   .ui.link.list .item;
   color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  transition: color .3s ease-in-out;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -ms-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
 }

@@ -9,7 +9,12 @@ module.exports = {
     site: {
       title: "holonomy is",
       //many parts collectively owning a whole consciousness
-      description: "the hive mind economy",
+      tagline: "the hive mind economy",
+      description: "holonomy is the living economy controlled by our collective consciousness. " +
+        "as most of our consciousness is unaware of ourselves, the economic infrastructure in " +
+        "place is structured against us. in order to create a better holonomy, we must ourselves " +
+        " become aware, spread new ideas of life worth living, and use our skills to implement " +
+        "infrastructure controlled by our collective consciousness."
     },
   },
   detectEncoding: true,

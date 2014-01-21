@@ -7,9 +7,16 @@
     </h2>
   </header>
 
-  <p class="ui blue center aligned segment">
-  contribute any individual knowledge to advance our collective knowledge!
+  <p class="ui purple center aligned segment">
+    {{ site.description }}
   </p>
 
   {{partial "research.html.md"}}
+
+  <p class="ui blue center aligned segment">
+    to contribute insightful resources, edit
+    <a href="https://github.com/holonomy/holonomy.is/blob/master/src/partials/research.html.md">here</a>
+    and
+    <a href="https://help.github.com/articles/using-pull-requests">submit a pull request</a>.
+  </p>
 </section>

@@ -14,7 +14,7 @@ module.exports = {
         "as most of our consciousness is unaware of ourselves, the economic infrastructure in " +
         "place is structured against us. in order to create a better holonomy, we must ourselves " +
         " become aware, spread new ideas of life worth living, and use our skills to implement " +
-        "infrastructure controlled by our collective consciousness."
+        "infrastructure that empowers our collective consciousness."
     },
   },
   detectEncoding: true,

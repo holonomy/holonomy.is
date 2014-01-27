@@ -7,9 +7,9 @@
     </h2>
   </header>
 
-  <p class="ui purple center aligned segment">
-    {{ site.description }}
-  </p>
+  <div class="description">
+    {{#marked}}{{ site.description }}{{/marked}}
+  </div>
 
   {{partial "research.html.md"}}
 

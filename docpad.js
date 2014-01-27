@@ -10,10 +10,7 @@ module.exports = {
       title: "holonomy is",
       //many parts collectively owning a whole consciousness
       tagline: "the hive mind economy",
-      description: "holonomy is the living economy represented by our collective consciousness. " +
-        "at the moment, the prevailing economic infrastructure is represented by non-conscious " + 
-        "constructs such as states and corporations. in order to create a better holonomy, we " +
-        "must reconstruct our economic infrastructure as ourselves.",
+      description: "holonomy is the living economy represented by conscious [holons](http://en.wikipedia.org/wiki/Holon_%28philosophy%29). at the moment, the prevailing economic infrastructure is represented by non-conscious constructs such as states, corporations, and capital. in order to create a better holonomy, we must reconstruct our economic infrastructure to support [peer-to-peer](http://en.wikipedia.org/wiki/Peer-to-peer) interactions amongst [holons](http://en.wikipedia.org/wiki/Holon_%28philosophy%29).",
     },
   },
   detectEncoding: true,

@@ -180,6 +180,10 @@ body > nav {
   }
 }
 
+body > main {
+  background: linear-gradient(to left, #eeeeec, #fafaf8, #eeeeec);
+}
+
 body > main.ui.grid > section.column {
 
   text-align: center;
@@ -217,6 +221,12 @@ body > main.ui.grid > section.column {
   .action.segment {
     display: inline-block;
   }
+
+  i.circular.icon {
+    -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.3) inset;
+  }
 }
 .learn.column .description p {
   .ui.segment;
@@ -238,5 +248,5 @@ a {
 }
 a:link    { color: @blue;   }
 a:visited { color: @purple; }
-a:hover   { color: @aqua;   }
+a:hover   { color: @maroon;   }
 a:active  { color: @orange; }

@@ -69,6 +69,10 @@ var setWaypoints = function () {
           if (isDown) {
             // activate current item
             item.toggleClass('active', true);
+            if (history.replaceState) {
+              history.replaceState(null, null, linkId);
+            }
+            window.location.hash = linkId;
             // deactivate previous item
             item.prev().toggleClass('active', false);
           } // when scrolling up,
@@ -77,6 +81,11 @@ var setWaypoints = function () {
             item.toggleClass('active', false);
             // activate previous item
             item.prev().toggleClass('active', true);
+            if (history.replaceState) {
+              var prevLinkId = item.prev().find('a').first().attr('href');
+              prevLinkId = prevLinkId ? prevLinkId.replace('/', '\\/') : '/';
+              history.replaceState(null, null, prevLinkId);
+            }
           }
           // refresh nav and waypoints offset
           nav.css({ height: mainMenu.outerHeight() });

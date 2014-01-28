@@ -1,5 +1,7 @@
 var $ = window.jQuery = require('jquery/dist/jquery')(window);
 require('jquery-waypoints');
+require('jquery.scrollTo');
+require('jquery.localScroll')
 var _ = require('lodash');
 
 var gears = require('./gears');
@@ -7,6 +9,7 @@ var gears = require('./gears');
 $(function () {
   window.onresize = setGears;
   setGears();
+  $.localScroll({ hash: true, axis: 'y' });
   setWaypoints();
 });
 

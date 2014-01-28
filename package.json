@@ -20,7 +20,9 @@
     "d3": "~3.3.13",
     "marked": "~0.3.0",
     "jquery": "2.1.0-beta3",
-    "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git"
+    "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git",
+    "jquery.scrollTo": "git+https://github.com/ahdinosaur/jquery.scrollTo.git",
+    "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {

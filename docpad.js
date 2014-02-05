@@ -9,7 +9,7 @@ module.exports = {
     site: {
       title: "holonomy is",
       tagline: "the hive mind economy",
-      description: "holonomy is the economy represented by the collective action of [holon](http://en.wikipedia.org/wiki/Holon_%28philosophy%29) beings. in order to create a better holonomy, we must strip away the infrastructure that causes us to act against each other, and reconstruct our economy as [peer-to-peer](http://en.wikipedia.org/wiki/Peer-to-peer) cooperative markets of self-organizing and replicating [holons](http://en.wikipedia.org/wiki/Holon_%28philosophy%29).",
+      description: "holonomy is the economy represented by the collective action of [holon](http://en.wikipedia.org/wiki/Holon_%28philosophy%29) beings. in order to create a better holonomy, we must strip away the infrastructure that causes us to act against each other, and reconstruct our economy as [peer-to-peer](http://en.wikipedia.org/wiki/Peer-to-peer) markets of self-organizing and replicating cooperatives.",
     },
   },
   detectEncoding: true,

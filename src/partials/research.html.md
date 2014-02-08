@@ -13,6 +13,7 @@
   - ["Open Source Ecology Paradigm"](http://opensourceecology.org/wiki/Open_Source_Ecology_Paradigm)
   - ["Telekommunist Manifesto"](http://telekommunisten.net/the-telekommunist-manifesto/)
   - ["New Libertarian Manifesto"](http://agorism.info/docs/NewLibertarianManifesto.pdf)
+  - ["The Open Enterprise Manifesto"](http://www.opencompany.org/resources/whitepaper.pdf)
 - about collective consciousness
   - ["Buddhism Without Beliefs"](http://alexox.com/sangha/StephenBatchelor-BuddhismwithoutBeliefs.pdf)
   - ["Meditation in Plain English"](http://www.urbandharma.org/udharma4/mpe1-4.html)

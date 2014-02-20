@@ -1,4 +1,7 @@
-var $ = window.jQuery = require('jquery/dist/jquery')(window);
+---
+browserify: true
+---
+var $ = window.jQuery = require('jquery');
 require('jquery-waypoints');
 require('jquery.scrollTo');
 require('jquery.localScroll')

@@ -13,13 +13,13 @@
   },
   "homepage": "http://holonomy.is",
   "dependencies": {
-    "docpad": "~6.59.6",
+    "docpad": "~6.63.3",
     "lodash": "~2.4.1",
-    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
+    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.5",
     "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome#v4.0.3",
     "d3": "~3.3.13",
     "marked": "~0.3.0",
-    "jquery": "2.1.0-beta3",
+    "jquery": "2.1.0",
     "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git",
     "jquery.scrollTo": "git+https://github.com/ahdinosaur/jquery.scrollTo.git",
     "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git"
@@ -33,12 +33,12 @@
   "devDependencies": {
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-partials": "~2.8.1",
-    "docpad-plugin-less": "~2.4.0",
-    "docpad-plugin-browserifybundler": "~2.0.3",
+    "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-browserifydocs": "~2.1.0",
     "docpad-plugin-marked": "~2.2.0",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-raw": "git+https://github.com/ahdinosaur/docpad-plugin-raw.git",
-    "docpad-plugin-ghpages": "~2.4.2",
+    "docpad-plugin-ghpages": "~2.4.3",
     "longjohn": "~0.2.2",
     "docpad-plugin-livereload": "~2.5.6"
   }

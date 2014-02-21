@@ -22,7 +22,8 @@
     "jquery": "2.1.0",
     "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git",
     "jquery.scrollTo": "git+https://github.com/ahdinosaur/jquery.scrollTo.git",
-    "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git"
+    "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git",
+    "docpad-plugin-browserifybundles": "~2.0.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
@@ -34,7 +35,6 @@
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-browserifydocs": "~2.1.0",
     "docpad-plugin-marked": "~2.2.0",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-raw": "git+https://github.com/ahdinosaur/docpad-plugin-raw.git",

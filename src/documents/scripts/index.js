@@ -1,6 +1,3 @@
----
-browserify: true
----
 var $ = window.jQuery = require('jquery');
 require('jquery-waypoints');
 require('jquery.scrollTo');

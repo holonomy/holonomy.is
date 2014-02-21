@@ -14,6 +14,6 @@
     <%- @partial("header.html.hb") %>
 
     <%- @content %>
-    <%- @getBlock("scripts").add("/scripts/index.js").toHTML() %>
+    <%- @getBlock("scripts").add("/scripts/bundle.js").toHTML() %>
   </body>
 </html>

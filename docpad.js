@@ -32,7 +32,21 @@ module.exports = {
         },
       },
     },
-    browserifydocs: {
+    browserifybundles: {
+      bundles: [{
+        arguments: ['-t', 'uglifyify'],
+        entry: 'scripts/index.js',
+        out: 'scripts/bundle.js',
+      }],
+      environments: {
+        development: {
+          bundles: [{
+            arguments: ['-d'],
+            entry: 'scripts/index.js',
+            out: 'scripts/bundle.js',
+          }],
+        },
+      },
     },
     raw: {
       'font-awesome': {

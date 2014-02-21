@@ -23,7 +23,8 @@
     "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git",
     "jquery.scrollTo": "git+https://github.com/ahdinosaur/jquery.scrollTo.git",
     "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git",
-    "docpad-plugin-browserifybundles": "~2.0.0"
+    "docpad-plugin-browserifybundles": "~2.0.0",
+    "uglifyify": "~1.2.2"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {

@@ -13,18 +13,18 @@
   },
   "homepage": "http://holonomy.is",
   "dependencies": {
-    "docpad": "~6.63.3",
+    "docpad": "~6.63.7",
     "lodash": "~2.4.1",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.5",
     "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome#v4.0.3",
     "d3": "~3.3.13",
-    "marked": "~0.3.0",
+    "marked": "~0.3.1",
     "jquery": "2.1.0",
     "jquery-waypoints": "git+https://github.com/ahdinosaur/jquery-waypoints.git",
     "jquery.scrollTo": "git+https://github.com/ahdinosaur/jquery.scrollTo.git",
     "jquery.localScroll": "git+https://github.com/ahdinosaur/jquery.localScroll.git",
     "docpad-plugin-browserifybundles": "~2.0.0",
-    "uglifyify": "~1.2.2"
+    "uglifyify": "~1.2.3"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
